@@ -1,6 +1,2 @@
-# Run Database Migrations
-php artisan migrate:fresh
-
-# Run Database Seeders
-php artisan db:seed --class=LettersTableSeeder
-php artisan db:seed --class=WordsTableSeeder
+# Run Database Migrations and Seeders
+php artisan migrate:fresh --seed

@@ -15,6 +15,7 @@ class LettersTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('letters')->delete();
         $letters = [
             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
             'i', 'j', 'k', 'l', 'm', 'ñ', 'o', 'p',
