@@ -601,7 +601,7 @@ class WordsTableSeeder extends Seeder
 
         foreach ($words as $letter => $wordValue) {
             $letter = Letter::where('letter', $letter)->first();
-            $letter->words()->createMany($wordValue);
+            if ($letter) $letter->words()->createMany($wordValue);
         }
     }
 }
