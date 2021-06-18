@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/glosary/letters', 'API\GlosaryController@index');
+Route::get('/destinations', 'API\DestinationController@index');

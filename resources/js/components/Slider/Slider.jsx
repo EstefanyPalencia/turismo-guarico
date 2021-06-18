@@ -7,7 +7,7 @@ import { CaretLeft32, CaretRight32 } from "@carbon/icons-react";
 
 const DivContainerSlider = styled.div`
     position: relative;
-    grid-area: slider;
+    overflow-x: hidden;
 `;
 
 const SlideImage = styled.div`

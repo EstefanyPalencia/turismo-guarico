@@ -24,7 +24,7 @@ const TitleComponent = styled.h2`
 `;
 
 const CardList = styled.div`
-    width: calc(100vw - 3rem);
+    width: calc(100vw - 2rem);
     overflow-x: scroll;
     display: grid;
     grid-template-columns: repeat(8, 1fr);

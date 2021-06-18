@@ -6,6 +6,7 @@ import ArcoDelLlano from "@/images/arco-del-llano.jpg";
 import Morritos from "@/images/morritos.jpg";
 import VillaOlimpica from "@/images/villa-olimpica.jpg";
 import CartelMonumentoAristidesRojas from "@/images/cartel-monumento-aristides-rojas.jpg";
+import Destinations from "./Destinations";
 
 const images = [
     { image: ArcoDelLlano, title: "Puerta del Llano" },
@@ -19,15 +20,9 @@ const images = [
 
 const LandingContainer = styled.div`
     display: grid;
-    grid-template-rows: repeat(2, 1fr) 0.5fr 1fr;
+    grid-template-rows: 1fr;
     row-gap: 0.5rem;
     @media (min-width: 768px) {
-        grid-template-rows: 1.5fr 0.8fr 1.3fr;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "slider slider"
-            "mision vision"
-            "valuable valuable";
         row-gap: 0rem;
     }
 `;
@@ -36,6 +31,7 @@ const Landing = () => {
     return (
         <LandingContainer>
             <Slider images={images} />
+            <Destinations />
         </LandingContainer>
     );
 };
